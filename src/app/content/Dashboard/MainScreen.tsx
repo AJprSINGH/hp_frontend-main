@@ -37,6 +37,7 @@ const MainScreen: React.FC = () => {
   // Create the component map with proper typing
   const componentMap: ComponentMap = {
     'Libraries/skillLibrary.tsx': lazy(() => import('@/app/content/Libraries/skillLibrary')),
+    'Libraries/jobLibrary.tsx': lazy(() => import('@/app/content/Libraries/jobLibrary')),
     // Add other components here as needed
   };
   
