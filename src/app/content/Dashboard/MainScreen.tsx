@@ -12,7 +12,7 @@ type Props = {
 type MenuDetail = {
   menu: string;
   pageType: string;
-  access: string; // component import path relative to this file
+  access: string; // component import path relative
 };
 
 const MainScreen: React.FC = () => {
