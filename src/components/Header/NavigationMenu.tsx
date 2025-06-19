@@ -139,7 +139,19 @@ export const NavigationMenu: React.FC<NavigationMenuProps> = ({ onMenuItemClick 
           text="Reports"
           onClick={() => handleMenuClickWithAnimation("Reports")}
         /> */}
-
+        <MenuItem
+            key="website-analyzer"
+            iconSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/7ad6cfa32ac11f46cbf34fa6baab2bb1cb352269?placeholderIfAbsent=true&apiKey=f18a54c668db405eb048e2b0a7685d39"
+            text="Website Analyzer"
+            onClick={() => {
+              const menuDetail = {
+                menu: 'Website Analyzer',
+                pageType: 'custom',
+                access: 'WebsiteAnalyzer.tsx',
+              };
+              window.dispatchEvent(new CustomEvent('menuSelected', { detail: menuDetail }));
+            }}
+          />
         {menuItemArr.map((item) => (
           // <div key={item.id} className="flex flex-col items-start gap-2">
           //   <label htmlFor={`menu_name_${item.id}`}>Menu Name:</label>
